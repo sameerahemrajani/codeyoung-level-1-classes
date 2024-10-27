@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<center>
+<h1> Driving Allowance </h1>
+<form onsubmit="driving()">
+Enter Your Age: <br> <br>
+<input type="number" id="a">
+<br> <br>
+<input type="submit" value="Check Allowance">
+<i id="output"> </i>
+</form>
+<script>
+function driving(){
+    var output=document.getElementById("a").value
+    if(output>18){
+      document.getElementById("output").innerHTML="Your allowed to drive"
+      console.log("Your allowed to drive")
+    }else{
+         document.getElementById("output").innerHTML="Your not allowed to drive"
+           console.log("Your not allowed to drive")
+    }
+}
+</script>
+</center>
+</body>
+</html>
